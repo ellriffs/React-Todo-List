@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.title {
+  color: white;
+  font-family: 'luckiest guy';
+  font-size: 6rem;
+  margin: 6%;
+  text-shadow: 1px 1px 5px black;
+}
+
+@media (max-width: 671px) {
+  .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+.tasks {
+  background-image: url('../Assets/creased-paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px double white;
+  height: 100vh;
+  width: 50vw;
+  border-radius: 30px;
+  list-style: none;
+  font-size: 4rem;
+  font-family: 'fasthand';
+  overflow: auto;
+}
+
+.task-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-box {
+  margin: 20px;
+  height: 1.2rem;
+  width: 2rem;
+}
+
+.check-box:active {
+  background-color: red;
+}
+
+.task-input {
+  width: 100%;
+  font-size: 3rem;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  text-shadow: 1px, 2px, 1px black;
+  text-align: center;
+  font-weight: 300;
+}
+
+.add-task {
+  margin: 10px;
+}
+
+.task-input:placeholder-shown {
+  color: white;
+}
+
+.subheading {
+  font-family: 'luckiest guy';
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+@media (max-width: 918px) {
+  .tasks {
+    width: 70vw;
+    height: 100vh;
+    font-size: 2rem;
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  .subheading {
+    font-size: 2rem;
+  }
+  .tasks {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .task-input {
+    font-size: 2rem;
+    width: 100vw;
+    margin: 20px;
+  }
+}
